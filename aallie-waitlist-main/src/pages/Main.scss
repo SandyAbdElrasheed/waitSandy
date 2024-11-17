@@ -1,0 +1,134 @@
+@media (max-width: 576px) {
+  .images-responsive img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .btn-join-aallie,
+  .btn-submit-email {
+    width: 160px !important;
+    height: 70px !important;
+  }
+
+  .form-control {
+    width: 270px !important;
+    height: 60px !important;
+  }
+
+  .img-line-1 {
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  .subTagLine {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .images-responsive img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .btn-join-aallie,
+  .btn-submit-email {
+    width: 160px !important;
+    height: 70px !important;
+  }
+
+  .form-control {
+    width: 370px !important;
+    height: 60px !important;
+  }
+
+  .img-line-1 {
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  .subTagLine {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .images-responsive img {
+    width: 300px !important;
+    height: auto !important;
+  }
+
+  .btn-join-aallie,
+  .btn-submit-email {
+    width: 160px !important;
+    height: 70px !important;
+  }
+
+  .form-control {
+    width: 280px !important;
+    height: 60px !important;
+  }
+
+  .img-line-1 {
+    width: 300px !important;
+    height: auto !important;
+  }
+
+  .subTagLine {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .images-responsive img {
+    width: 400px !important;
+    height: auto !important;
+  }
+
+  .form-control {
+    width: 350px !important;
+    height: 60px !important;
+  }
+
+  .btn-join-aallie,
+  .btn-submit-email {
+    width: 160px !important;
+    height: 70px !important;
+  }
+
+  .img-line-1 {
+    width: 500px !important;
+    height: auto !important;
+  }
+
+  .subTagLine {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .images-responsive img {
+    width: 500px !important;
+    height: auto !important;
+  }
+
+  .btn-join-aallie,
+  .btn-submit-email {
+    width: 160px !important;
+    height: 70px !important;
+  }
+
+  .form-control {
+    width: 400px !important;
+    height: 60px !important;
+  }
+
+  .img-line-1 {
+    width: 600px !important;
+    height: auto !important;
+  }
+
+  .subTagLine {
+    font-size: 15px;
+  }
+}

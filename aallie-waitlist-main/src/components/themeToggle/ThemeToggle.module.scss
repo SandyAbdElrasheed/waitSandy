@@ -1,0 +1,106 @@
+.toggleContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkboxLabel {
+  background-color: var(--background-color);
+  width: 60px; 
+  height: 30px; 
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--text-color);
+  transition: width 0.3s ease, height 0.3s ease; /* Smooth transition */
+}
+
+[data-theme='dark'] .checkboxLabel {
+  border: 2px solid var(--accent-color);
+}
+
+.moonIcon {
+  color: var(--accent-color);
+  position: absolute;
+  left: 8px;
+  font-size: 14px; 
+}
+
+.sunIcon {
+  color: var(--text-color);
+  position: absolute;
+  right: 8px;
+  font-size: 14px; 
+}
+
+.ball {
+  background-color: var(--text-color);
+  width: 24px; 
+  height: 24px; 
+  position: absolute;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease; /* Smooth transition */
+}
+
+[data-theme='dark'] .ball {
+  background-color: var(--accent-color);
+}
+
+.checkbox:checked + .checkboxLabel .ball {
+  transform: translateX(30px); /* Default transformation */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .checkboxLabel {
+    width: 50px; /* Reduce width on smaller screens */
+    height: 25px; /* Reduce height */
+  }
+
+  .ball {
+    width: 20px; /* Reduce ball size */
+    height: 20px;
+  }
+
+  .checkbox:checked + .checkboxLabel .ball {
+    transform: translateX(25px); /* Adjust transform for new width */
+  }
+
+  .moonIcon, .sunIcon {
+    font-size: 12px; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .checkboxLabel {
+    width: 40px; /* Smaller width for very small screens */
+    height: 20px; /* Smaller height */
+  }
+
+  .ball {
+    width: 16px; /* Smaller ball */
+    height: 16px;
+  }
+
+  .checkbox:checked + .checkboxLabel .ball {
+    transform: translateX(20px); /* Adjust transform */
+  }
+
+  .moonIcon, .sunIcon {
+    font-size: 10px; /* Smaller icon size */
+  }
+}

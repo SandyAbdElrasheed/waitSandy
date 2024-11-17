@@ -1,0 +1,182 @@
+@import 'themes/light';
+@import 'themes/dark';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import './abstracts/mixins';
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: var(--background-color); 
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  overflow-y: auto; /* Ensure vertical scroll when necessary */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.btn-join-aallie {
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  border-radius: 30px;
+  font-size: 21px;
+  line-height: 28px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+  }
+}
+
+[data-theme='dark'] .btn-join-aallie {
+  border-color: var(--accent-color); 
+  color: var(--accent-color);
+
+  &:hover {
+    background-color: var(--accent-color);
+    color: #000000;
+  }
+}
+
+.tagline {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+.subTagLine {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+[data-theme='dark'] .subTagLine {
+  color: #ffffff61;
+}
+
+.FooterTagLine {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+[data-theme='dark'] .FooterTagLine {
+  color: var(--accent-color);
+}
+
+.form-control {
+  
+  height: 74px !important;
+  background-color: var(--background-color) !important;
+  border: 2px solid var(--text-color) !important;
+  border-radius: 74px 0 0 74px;
+  color: var(--text-color);
+  width: 120%;
+  padding: 1rem;
+  font-size: 1rem; 
+}
+
+.form-control::placeholder {
+  color: var(--text-color);
+  opacity: 0.3;
+}
+
+[data-theme='dark'] .form-control::placeholder {
+  color: var(--accent-color);
+  opacity: 0.3;
+}
+
+[data-theme='dark'] .form-control {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+}
+
+.btn-submit-email {
+  width: 100%;
+  height: 74px !important;
+  background-color: var(--button-color);
+  color: var (--background-color);
+  border-radius: 0 74px 74px 0;
+  border: 2px solid var(--text-color);
+  padding: 1rem;
+  font-size: 1rem;  
+}
+
+.btn-submit-email:hover {
+  background-color: var(--button-color);
+  color: var(--background-color);
+}
+
+[data-theme='dark'] .btn-submit-email {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+[data-theme='dark'] .btn-submit-email:hover {
+  background-color: var(--hover-color);
+  color: var(--hover-tex-color);
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.social-icons a {
+  text-decoration: none; /* Removes underline from the links */
+}
+
+.social-icons i {
+  width: 50px;
+  height: 50px;
+  color: var(--background-color);
+  background-color: var(--text-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+[data-theme='dark'] .social-icons i {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+.video {
+  width: 1300px;
+  border-radius: 40px;
+  height: 750px;
+  background-color: var(--secondary-color);
+}
+
+.img-line-1,
+.img-line-2 {
+  width: 100%; /* Set width relative to the viewport */
+  max-width: 1420px; /* Restrict maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust positioning for .img-line-2 if necessary */
+.img-line-2 {
+  transform: translateX(0); /* Reset or adjust translation for smaller screens */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .img-line-1,
+  .img-line-2 {
+    width: 100%; /* Reduce width on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .img-line-1,
+  .img-line-2 {
+    width: 100%; /* Further reduce width on small screens */
+    transform: translateX(0); /* Ensure it's centered or properly positioned */
+  }
+}
+
+li {
+  list-style: decimal;
+}
